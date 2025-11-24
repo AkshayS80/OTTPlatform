@@ -12,6 +12,21 @@ This project contains a responsive and interactive Live Dashboard for OTT music 
 
 ## Tech Stack
 - HTML5  
-- CSS3
-- Python
-- Plotly.js 
+- CSS3  
+- Python  
+- Plotly.js  
+
+---
+
+## 🛠️ How to Run This Project
+
+### 1. **Open in GitHub Codespaces**
+Clone this project or start a new Codespace from your GitHub repository.
+
+---
+
+### 2. **Set Up Dependencies**
+Install the required Python packages (if not already installed):
+
+```bash
+pip install flask pandas numpy
