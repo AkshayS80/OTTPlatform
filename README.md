@@ -37,7 +37,7 @@ Use the following command to start the app
 ```bash
 python app.py
 ```
-The application will be accessible at http://127.0.0.1:5000.
+The application will be accessible at [http://127.0.0.1:5000.](https://improved-memory-p47p7w9gw6q2j7j-5000.app.github.dev/)
 
 ### 4. **Explore the Dashboard**
 Open the web interface to view:
