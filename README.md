@@ -14,5 +14,4 @@ This project contains a responsive and interactive Live Dashboard for OTT music 
 - HTML5  
 - CSS3
 - Python
-- Plotly.js  
-- Flask/Django compatible (template-ready)
+- Plotly.js 
