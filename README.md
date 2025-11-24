@@ -30,3 +30,20 @@ Install the required Python packages (if not already installed):
 
 ```bash
 pip install flask pandas numpy
+```
+
+### 3. **Run the application**
+Use the following command to start the app
+```bash
+python app.py
+```
+The application will be accessible at http://127.0.0.1:5000.
+
+### 4. **Explore the Dashboard**
+Open the web interface to view:
+- Revenue breakdowns
+- Top songs by income
+- Language distribution
+- Artist and album performance
+- Efficiency and royalty metrics
+
