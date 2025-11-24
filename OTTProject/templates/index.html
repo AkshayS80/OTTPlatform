@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>OTT Solutions - Live Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+  <script src="https://cdn.plot.ly/plotly-2.26.0.min.js"></script>
+</head>
+<body>
+  <header class="top-nav">
+  <div class="brand">
+    <span class="logo-dot"></span>
+    <span class="logo-dot orange"></span>
+    <span class="logo-dot blue"></span>
+    <span class="brand-text">OTT Solutions</span>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+
+      <!-- Reports Dropdown -->
+      <li class="dropdown">
+        <a href="#">Reports ▼</a>
+        <div class="dropdown-menu">
+          <div class="dropdown">
+            <a href="#">DSP ▶</a>
+            <div class="dropdown-menu-dsp">
+              <a href="/artist">Artist</a>
+              <a href="#">Album</a>
+              <a href="#">Track</a>
+            </div>
+          </div>
+          <a href="#">Caller Tune</a>
+        </div>
+      </li>
+
+      <li><a href="#">Repertoire</a></li>
+      <li><a href="#">New Songs Release</a></li>
+      <li><a href="#">Resource</a></li>
+      <li><a href="#">Contact</a></li>
+
+      <!-- Account Dropdown -->
+      <li class="dropdown">
+        <a href="#">Account ▼</a>
+        <div class="dropdown-menu right">
+          <a href="#">Profile</a>
+          <a href="#">Logout</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+  <main class="dashboard">
+    <h1 class="title">Live Dashboard</h1>
+
+    <section class="grid">
+      <!-- 🎶 1. Revenue Contribution -->
+      <div class="card">
+        <h2>Revenue Contribution by Platform</h2>
+        <p class="subtitle">Airtel vs JioSaavn vs Wynk</p>
+        <div id="revenueContribution"></div>
+      </div>
+
+      <!-- 🌍 1. Language Distribution (now higher) -->
+      <div class="card">
+        <h2>Language Distribution</h2>
+        <p class="subtitle">Song counts by language</p>
+        <div id="languageDistribution"></div>
+      </div>
+
+      <!-- 📊 2. Top Songs by Revenue (now lower) -->
+      <div class="card">
+        <h2>Top Songs by Revenue</h2>
+        <p class="subtitle">Ranking songs across platforms</p>
+          <div id="topSongsRevenue"></div>
+      </div>
+
+      <!-- 👥 4. Artist Performance -->
+      <div class="card full">
+        <h2>Artist Performance Comparison</h2>
+        <p class="subtitle">Revenue split by platform</p>
+        <div id="artistPerformance"></div>
+      </div>
+
+      <!-- 📈 5. Streams vs Income Efficiency -->
+      <div class="card">
+        <h2>Streams vs Income Efficiency</h2>
+        <p class="subtitle">Scatter plot of streams vs income</p>
+        <div id="streamsEfficiency"></div>
+      </div>
+
+      <!-- 💰 6. Royalty vs Admin Expenses -->
+      <div class="card">
+        <h2>Royalty vs Admin Expenses</h2>
+        <p class="subtitle">Grouped comparison per song</p>
+        <div id="royaltyAdmin"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>TUNE O</span>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+</body>
+</html>

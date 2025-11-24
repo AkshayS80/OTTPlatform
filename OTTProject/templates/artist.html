@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Artist Income Report</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="artist-panel">
+    <h1>Artist</h1>
+    <div class="table-controls">
+      <label>
+        Show
+        <select id="entriesPerPage">
+          <option value="5">5</option>
+          <option value="10" selected>10</option>
+          <option value="25">25</option>
+        </select>
+        entries
+      </label>
+      <input type="text" id="searchInput" placeholder="Search artist..." />
+    </div>
+    <table id="artistTable">
+      <thead>
+        <tr>
+          <th>Artist</th>
+          <th>Income</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div id="pagination"></div>
+  </main>
+  <script src="artist.js"></script>
+</body>
+</html>
