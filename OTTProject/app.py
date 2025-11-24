@@ -171,11 +171,7 @@ def aggregate_metrics():
 @app.route('/')
 def index():
     return render_template('index.html')
-
-@app.route('/artist')
-def artist():
-    return render_template('artist.html')
-
+    
 @app.route('/api/dashboard')
 def api_dashboard():
     try:
@@ -196,4 +192,5 @@ def api_dashboard():
 
 
 if __name__ == '__main__':
+
     app.run(debug=True)
